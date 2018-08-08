@@ -25,8 +25,8 @@ def create_default_site(app, created_models, verbosity, **kwargs):
 
         s = Site(id=settings.SITE_ID, domain=settings.SITE_DOMAIN, name=settings.SITE_NAME)
         if verbosity >= 2:
-            print "Site object:"
-            print s
+            print("Site object:")
+            print(s)
         s.save()
     # clear the cache
     Site.objects.clear_cache()
