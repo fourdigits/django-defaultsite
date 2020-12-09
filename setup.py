@@ -14,7 +14,7 @@ except ImportError:
 from setuptools import setup, find_packages
 setup(
     name = "django-defaultsite",
-    version = "1.1",
+    version = "1.1.dev0",
     packages = find_packages('src'),
     package_dir = {'': 'src'},
     package_data={'': ['LICENSE']},
